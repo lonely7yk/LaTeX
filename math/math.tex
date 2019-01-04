@@ -1,0 +1,78 @@
+%!TEX program = xelatex
+
+\documentclass{article} 
+\usepackage[UTF8]{ctex}
+\usepackage{amsmath}	% 这个包必须加
+
+\begin{document} 
+	%% 方程
+	爱因斯坦的$E=mc^2$方程
+	\begin{equation}
+		E=mc^2
+	\end{equation}
+
+	\[E=mc^2\]
+	\[\boxed{E=mc^2}\]
+
+	\[x_{ij}^2\quad \sqrt[2]{x}\]
+
+	\[\pm \times \div \cdot \cap \cup \geq \leq \neq \approx \equiv\]
+
+	% 参数 {ccc} 用于设置每 列的对齐方式，
+	% l、c、r 分别表示左中右；\\ 和 & 用来分隔行和列。
+	\[\begin{array}{ccc} 
+	x_1 & x_2 & \dots \\ 
+	x_3 & x_4 & \dots \\ 
+	\vdots & \vdots & \ddots \\ 
+	\end{array}\]
+
+	% 长公式（不对齐）
+	\begin{multline}
+		x=a+b+c+\\
+		d+e+f+g
+	\end{multline}
+	% 长公式（对齐）
+	\[\begin{split}
+		x=&a+b+c+\\
+		&d+e+f+g
+	\end{split}\]
+
+	% 公式组（不对齐）gather写成gather*去掉编号
+	\begin{gather}
+		a=b+c+d\\
+		x=y+z
+	\end{gather}
+	% 公式组（对齐）
+	\begin{align}
+		a&=b+c+d\\
+		x&=y+z
+	\end{align}
+	% case
+	\[y=\begin{cases}
+	-x & x<0\\
+	x & x\ge0
+	\end{cases}\]
+
+	% \newtheorem{环境名}[编号延续]{显示名}[编号层次]
+	\newtheorem{definition}{定义}[section]
+	\newtheorem{theorem}{定理}[section]
+	\newtheorem{lemma}[theorem]{引理}
+	\newtheorem{corollary}[theorem]{推论}
+
+	\begin{definition}
+		Java是一种跨平台语言
+	\end{definition}
+
+	\begin{theorem}
+		咖啡因会使人兴奋。
+	\end{theorem}
+
+	\begin{lemma}
+		茶和咖啡因都会使人兴奋。
+	\end{lemma}
+
+	\begin{corollary}
+		晚上喝咖啡会失眠。
+	\end{corollary}
+
+\end{document}

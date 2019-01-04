@@ -1,0 +1,30 @@
+%!TEX program = xelatex
+\documentclass[12pt]{article} %头文件
+
+\usepackage{url}%
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec,xltxtra,xunicode} % \defaultfontfeatures{Mapping=tex-text}
+
+\setromanfont{Heiti SC} %中字设置
+
+\XeTeXlinebreaklocale
+
+“zh”
+
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt %文内中文自动换行，可 自调
+
+\newfontfamily{\E}{Weibei SC} %自设字体快捷命令
+
+\newfontfamily{\H}{Songti SC} %自设字体快捷命令
+
+\begin{document} \thispagestyle{empty}
+
+\small{现在就输入中文啦,\\
+
+而且繁體字也行。\\
+
+另,若想文中换字体,可用\url{\newfontfamily}，如\\}
+
+\Huge{{\E 魏碑} {\H 宋体} 黑体}
+
+\end{document}

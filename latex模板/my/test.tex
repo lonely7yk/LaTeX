@@ -1,0 +1,56 @@
+% !Mode:: "TeX:UTF-8"
+
+\documentclass[12pt,UTF8]{ctexart}
+% \documentclass[12pt,type=master]{thuthesis}
+\usepackage{amsmath}
+\usepackage{bm}%此包与上一个包配合使用, 可用\bm命令同时加粗行中公式与单列公式
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage{graphicx}%加载jpg图片
+\usepackage[CJKbookmarks]{hyperref}
+\usepackage{abstract}
+\usepackage{bbm}
+
+%\linespread{1.3}%调整行间距
+\usepackage{fancyhdr}%页眉页脚设置
+\pagestyle{fancy}%页眉页脚设置
+
+\usepackage{geometry}%页边距
+\geometry{left=3.9cm,right=3.9cm,top=3.9cm,bottom=3.9cm}
+
+
+
+\begin{document}
+% \title{\huge{经典和量子PageRanks的比较}}
+% \date{}
+% \maketitle
+% \thispagestyle{empty}%去掉本页页码
+
+\section*{经典和量子PageRanks的比较}
+
+
+\begin{abstract}
+	摘要根据量子PageRanking的最新发展，我们对基于离散时间和连续时间量子的PageRank算法进行了比较分析。相对于经典PageRank和不同程度，量子测度更好地突出了次要中心，并解决了对于我们研究的所有网络的外围节点间的排名退化。对于离散时间情况，我们研究了广泛网络的步行器概率分布的周期性质，发现主要周期不随网络的大小而增长。在此基础上，我们引入了一种新的量子测量方法，它使用了在前两个周期内相关步行器的最大概率。这一点尤其重要，因为它导致了一种根据网络大小可伸缩的量子PageRanking方案。
+\end{abstract}
+
+% \newpage
+% \pagenumbering{Roman}
+% \tableofcontents
+% \newpage
+% \listoffigures
+% \newpage
+% \listoftables
+% \newpage
+% \pagenumbering{arabic}
+
+
+\input{part/introduction}
+\input{part/theorem}
+\input{part/result}
+% \input{part/part4}\newpage
+% \input{part/part5}\newpage
+% \input{part/part6}\newpage
+% \input{part/part7}\newpage
+
+\end{document}
